@@ -10,7 +10,7 @@
     "test": "",
     "lint": ""
   },
-  "author": "malyfko",
+  "author": "kasiak",
   "license": "",
   "dependencies": {
     "babel-core": "^6.26.0",
