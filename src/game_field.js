@@ -1,7 +1,6 @@
 import Cell from './cell';
 import ShipsSet from './ships_set';
-import Cell from './cell';
-import ShipsSet from './ships_set';
+
 
 const GameField = () => {
     const field = document.createElement('div');
@@ -11,16 +10,12 @@ const GameField = () => {
     shipSet.shipsPlacement.forEach((row) => {
         row.forEach((cell) => {
             field.append(Cell(cell));
+          
         })
     })
 
-
-    // let i = 0;
-    // while(i < 100){
-    //     field.append(Cell());
-    //     i++;
-    // }
-    // return field;
+    return field;
+  
 }
 
 export default GameField;

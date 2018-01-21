@@ -9,7 +9,7 @@ const main = () => {
    wrapper.append(GameField());
    wrapper.append(GameField());
    app.append(wrapper);
-
+    console.log(GameField());
 };
 
 main();
