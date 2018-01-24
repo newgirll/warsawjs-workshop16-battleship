@@ -13,15 +13,15 @@ class ShipsSet {
     generateRandomShip() {
         let ship;
         do {
-            ship = new Ship(Math.floor(Math.random() * 10), Math.floor(Math.random() * 10));
+        ship = new Ship(Math.floor(Math.random() * 10), Math.floor(Math.random() * 10));
         } while (!ship.isOnField());
-            return ship;
+        return ship;
     }
     generateSeveralShips(number) {
         let ships = [];
         for (let i = 0; i < number; i++){
            do {
-               ships[i] = this.generateRandomShip();
+            ships[i] = this.generateRandomShip();
            } while (!this.spaceIsAvailable(ships[i]));
 
            this.assignPlacement(ships[i]);
