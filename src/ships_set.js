@@ -13,9 +13,9 @@ class ShipsSet {
     generateRandomShip() {
         let ship;
         do {
-        ship = new Ship(Math.floor(Math.random() * 10), Math.floor(Math.random() * 10));
+            ship = new Ship(Math.floor(Math.random() * 10), Math.floor(Math.random() * 10));
         } while (!ship.isOnField());
-        return ship;
+            return ship;
     }
     generateSeveralShips(number) {
         let ships = [];
